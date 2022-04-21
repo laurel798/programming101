@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Which number out of the three entered, is the biggest?</p>
+        <p id="big"></p>
+        <script type="text/javascript">
+            function biggest (a,b,c) {
+            
+                if ((a > b) && (a > c)) {
+                    answer = a;
+                } else if ((b > a) && (b > c)) {
+                    answer = b;
+                } else if ((c > a) && (c > b)) {
+                    answer = c;
+                }
+
+                document.getElementById("big").innerHTML= "The biggest number is " + answer + ".";
+            }
+        </script>
+    </body>
+</html>

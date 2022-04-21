@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Pass or Fail?</p>
+
+        <p id="porf"></p>
+
+        <script type="text/javascript">
+            function final (tp1, tp2, api, ep) {
+
+                var tp1percent = (tp1*10)/100;
+                var tp2percent = (tp2*10)/100;
+                var apipercent = (api*30)/100;
+                var eppercent = (ep*50)/100;
+
+                let totes = tp1percent+tp2percent+apipercent+eppercent;
+                    if (totes > 74) {
+                        result = "Pass";
+                    }   else {
+                        result = "Fail";
+                    }
+                
+                console.log(tp1percent+tp2percent+apipercent+eppercent);
+                document.getElementById("porf").innerHTML = result;
+            }
+        </script>
+    </body>
+</html>

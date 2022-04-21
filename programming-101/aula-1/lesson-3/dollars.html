@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script type="text/javascript">
+            function main(a,b) {
+
+                var d = a;
+                var conv = b;
+                var e = a * b;
+
+                let df = d.toLocaleString(undefined, {style:"currency", currency: "USD", minimumIntegerDigits: 2, minimumFractionDigits: 1});
+                let ef = e.toLocaleString(undefined, {style:"currency", currency: "EUR", minimumIntegerDigits: 2, minimumFractionDigits: 1});
+                
+                console.log(df + " are equivalent to " + ef);
+            }
+        </script>
+    </body>
+</html>

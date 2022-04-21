@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>What ticket should you buy?</h3>
+        <p>What age are you (please enter in number only format)?</p>
+        <p id="whatage"></p>
+
+        <script type="text/javascript">
+            function age(agenum) {
+
+                let any = agenum;
+                if (any < 6) {
+                    result = "No ticket necessary.";
+                } else if (any > 5 && any < 12) {
+                    result = "Child ticket.";
+                } else if (any > 11 && any < 65) {
+                    result = "Normal ticket.";
+                } else {
+                    result = "No ticket necessary.";
+                }
+
+                document.getElementById("whatage").innerHTML = result;    
+            }
+        </script>
+    </body>
+</html>

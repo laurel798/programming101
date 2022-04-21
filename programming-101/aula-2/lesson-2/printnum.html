@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Which number is the biggest?</p>
+        <p id="biggest"></p>
+
+        <script type="text/javascript">
+            function biggernum(firstnum,secondnum) {
+
+                let a = firstnum;
+                let b = secondnum;
+                    if (a == b) {
+                        result = "The two numbers are the same.";
+                    } else if (a > b) {
+                        result = a;
+                    } else {
+                        result = b;
+                    }
+
+                document.getElementById("biggest").innerHTML = result;    
+            }
+        </script>
+    </body>
+</html>

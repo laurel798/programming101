@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Is the number even or odd?</h2>
+        <p id="numero"></p>
+
+        <script type="text/javascript">
+            function evenorodd (a) {
+
+                if (!(Number.isInteger(a))) {
+                    answer = a + " is not an integer.";
+                } else if ( a % 2 == 0) {
+                    answer = a + " is an even number.";
+                } else {
+                    answer = a + " is an odd number.";
+                }                  
+                
+                document.getElementById("numero").innerHTML = "The number " + answer;
+            }
+        </script>
+    </body>
+</html>

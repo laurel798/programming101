@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script type="text/javascript">
+            function nettotal (value, discountrate, vat) {
+
+                var discountamount = (value/100)*discountrate;
+                var gross = value-discountamount
+                var vatamount = (gross/100)*vat;
+
+                console.log(gross-vatamount);
+
+            }
+       </script>
+    </body>
+</html>

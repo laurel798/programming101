@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>A program to sort three numbers in ascending order!</p>
+        <p id="order"></p>
+        <script type="text/javascript">
+            function ascending (a,b,c) {
+            
+                let first = parseInt(a);
+                let second = parseInt(b);
+                let third = parseInt(c);
+
+                if (first < second && first < third && second < third) {
+                    answer = [first + ", " + second + ", " + third];
+                } else {
+                    answer = [first + ", " + third + ", " + second];
+                } 
+                if (second < third && second < first && third < first) {
+                    answer = [second + ", " + third + ", " + first];
+                } else {                  
+                    answer = [second + ", " + first + ", " + third];
+                } 
+                if (third < second && third < first && first < second) {                    
+                    answer = [third + ", " + first + ", " + second];        
+                } else {                  
+                    answer = [third + ", " + second + ", " + first];
+                }
+                
+                document.getElementById("order").innerHTML= "Numbers in ascending order: " + answer;
+            }
+        </script>
+    </body>
+</html>
